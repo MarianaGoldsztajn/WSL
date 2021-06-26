@@ -1,0 +1,439 @@
+/***********************************ETIQUETAS***************************************/
+/* -------GENERAL------- */
+html{
+    font-size: 17px;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: rgb(87, 91, 94);
+    font-family: 'Roboto', sans-serif;
+}
+div{
+    background-color: white;
+    margin: auto;
+    width: 1200px;
+}
+h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+    color: #232020;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    letter-spacing: 7px;
+    margin: 50px auto 15px;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    margin: 5px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+abbr{
+    text-decoration: none;
+}
+/*------- LOGO ------- */
+header{
+    background-color: #232020;
+    text-align: center;
+}
+/* ------- MENU SUPERIOR ------- */
+nav{
+    font-size: 0; /* Quito el espacio entre los items */
+    border-bottom: 2px solid #232020;
+    border-top: 1px solid #232020;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    width: calc(100% / 5);
+}
+nav ul li .aSup{
+    color: #232020;
+    display: block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    height: 50px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+nav ul li .aSup:hover{
+    background-color: #232020;
+    color: white;
+}
+/*-------RESULTADOS-------*/
+table{
+    width: 500px;
+    margin: 20px;
+}
+td{
+    color: rgba(0, 0, 0, 0.822);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+}
+th{
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    margin-top: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+tr{
+    height: 35px;
+}
+tr:nth-child(2), tr:nth-child(3) {
+    background-color: #499099b4;
+    height: 35px;
+}
+tr:nth-child(4), tr:nth-child(5){
+    background-color: #4990997a;
+}
+tr:nth-child(6), tr:nth-child(7){
+    background-color: #4990993d;
+}
+/*------- FORMULARIO------- */
+label{
+    font-weight: bold;
+}
+legend{
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 380px;
+}
+fieldset{
+    border:0;
+    margin: 10px;
+}
+select, input[type="number"], input[type="text"], textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+input[type="submit"]{
+    background-color: #28666E;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2rem;
+    height: 60px;
+    letter-spacing: 6px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    width: 100px;
+}
+input[type="submit"]:hover{
+    background-color: #232020;
+    border: 3px solid  rgba(255, 255, 255, 0.425);
+}
+input[type="number"]{
+    width: 130px;
+}
+input[type="radio"]{
+    margin: 5px;
+}
+input[type="text"]{
+    margin: auto;
+    margin-left: 380px;
+    width: 410px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+select{
+    color: rgb(80, 79, 79);
+    margin-left: 380px;
+    width: 260px;
+}
+textarea{
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 380px;
+    resize: none;
+    width: 410px;
+}
+/*-------FOOTER-------*/
+footer{
+    background-color: #004346ce;
+    height: 70px;
+    text-align: center;
+}
+nav ul li .aInf{
+    margin: 15px;
+}
+/************************************CLASES*****************************************/
+/*------- NOTICIAS------- */
+.verMas{
+    background-color: #0043469d;
+    border: 2px solid #39c8cf41;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    height: 30px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+}
+.verMas:hover{
+    background-color: #39c8cf1c;
+    color: #0043469d;
+    border: 2px solid #024f53b2;
+}
+/*------- PARTICIPANTES------- */
+.topParticipantes { /*seccion titulo sexo + fotos*/
+    display: -webkit-flex;
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap; 
+    margin: 20px 50px 0 50px;
+    gap: 20px;
+    padding-left: 20px;
+}
+.topParticipantes h3{ /*seccion titulo sexo + fotos*/
+    font-size: 0.9rem;
+}
+.topParticipantes p{ /*seccion titulo sexo + fotos*/
+    font-size: 0.8rem;
+}
+.tituloSurfSexo{ /* Titulos: Top 6 femeninos y Top 6 masculinos */
+    border-top: 1px solid  #28666e;
+    color: #004346;
+    font-size: 20px;
+    letter-spacing: 7px;
+    width: 100%;
+}
+.top{ /* Imagen participantes */
+    border-radius: 50%;
+    border: 2px solid  #28666ea6;
+    margin: 15px;
+}
+.participante{ /*Figure cada participantes*/
+    width: calc(100% / 6 - 40px);
+    padding: 10px;
+}
+/*------- RESULTADOS------- */
+.titUltimos{
+    font-size: 25px
+}
+.textoSeccProximo{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+}
+.textoSeccProximo h3{
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 10px;
+}
+/* 2 FIGURES */
+.imgSeccProximo{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    /* gap: 30px; */
+}
+.imgSeccProximo figure{
+    margin: auto;
+}
+.titUltimos{
+    font-size: 25px
+}
+/*-------FORMULARIO----------- */
+.labelSexo{
+    margin-right: 20px;
+}
+/*------- PIE DE PAGINA------- */
+.imgFooter{
+    border-radius: 50%;
+    border: 3px solid #acbdbe54;
+    margin-top: 15px;
+}
+.imgFooter:hover{
+    margin-top: 15px;
+    border: 3px solid #ffffff7a;
+}
+/**************************************ID*******************************************/
+/*------- PANEL------- */
+#panel{
+    background-attachment: fixed;
+    background-image: url("imagenes/panel.jpg");
+    height: 430px;
+    text-align: center;
+}
+#panel h1{ /*Titulo en panel superior*/
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 4rem;
+    letter-spacing: 10px;
+    padding-top: 100px; 
+    margin: 0;
+}
+#panel p{
+    width: 650px;
+    margin: auto;
+    text-align: justify;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.733);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+}
+/*------- NOTICIAS------- */
+#ContenedorNoticias{
+    width: 1200px;
+    margin: auto;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+}
+#ContenedorNoticias h1{
+    width: 100%;
+}
+#ContenedorNoticias article{
+    flex:1;   
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid #02151663;
+}
+#ContenedorNoticias article img{
+    float: left;
+    margin: 0 20px 0 0;
+    border: 3px solid #39c8cf41;
+}
+#ContenedorNoticias article p{
+    text-align: left;
+}
+#ContenedorNoticias article h2{
+    text-align: left;
+    width: 100%;
+    letter-spacing: 2px;
+}
+#linkNoticia{
+    color: #0043469d;
+    font-weight: bold;
+}
+#linkNoticia:hover{
+    color: #46000f9d;
+}
+/*------- PARTICIPANTES------- */
+#SeccionSuperiorParicipantes{
+    margin-bottom: 20px;
+}
+#SeccionSuperiorParicipantes p{
+    margin: auto;
+    width: 550px;
+}
+/*------- RESULTADOS------- */
+/* seccion principal */
+#SeccionResultado{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* seccion titulo */
+#seccTitulosResultados{
+    width: 1100px;
+}
+#seccTitulosResultados h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#seccTitulosResultados h2{
+    display: inline-block;
+    letter-spacing: 6px;
+}
+#tituloProximos{
+    margin-left: 440px;
+}
+/* Seccion ultimos */
+#seccUltimos {
+    flex: 1;
+    border: 1px solid #02151663;
+    text-align: center;
+    margin-right: 70px;
+}
+/* Seccion proximos */
+#seccProximo {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #02151663;
+    text-align: center;
+}
+#aclaracionSeccProximo{
+    font-size: 13px;
+    margin: 15px;
+}
+/*------- GALERIA------- */
+#galeria{
+    color: #232020d0;;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#galeria figure{
+    display: inline-block;
+    margin: 50px 45px;
+}
+#galeria figure img{
+    border: 2px solid #00434680;
+    border-radius: 5px;
+}
+/*------- FORMULARIO------- */
+#contenedorForm{
+    border-bottom: 3px solid #28666e;
+    background-color: #28666e4f;
+    border-top: 3px solid #28666e;
+    color:#232020c4;
+    width: 1200px;
+}
+#inscribirme{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+#legendEdad{
+    margin-left: 0;
+}
+#seccionFormulario{
+    display: -webkit-flex;
+    display: flex;
+}
+#radFem{
+    margin-left: 380px;
+}
+/*------- PIE DE PAGINA------- */
+#navInf{
+    border: 0;
+}
+#navInf ul li{
+    width: auto;
+}
+
+
+
+
+
+
